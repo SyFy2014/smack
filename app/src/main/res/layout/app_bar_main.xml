@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-    <android.support.design.widget.CoordinatorLayout tools:context=".MainActivity"
+    <android.support.design.widget.CoordinatorLayout tools:context=".Controller.MainActivity"
              android:layout_height="match_parent"
              android:layout_width="match_parent"
              xmlns:tools="http://schemas.android.com/tools"

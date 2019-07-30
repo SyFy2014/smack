@@ -1,10 +1,11 @@
-package sylvain.example.smack
+package sylvain.example.smack.Controller
 
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_create_user.*
+import sylvain.example.smack.R
 import java.util.*
 
 class CreateUserActivity : AppCompatActivity() {
@@ -41,12 +42,14 @@ class CreateUserActivity : AppCompatActivity() {
 
         createAvatarImageView.setBackgroundColor(Color.rgb(r,g,b))
 
+        // I think the codes below is for devices working with Apple's operating system
+        // maybe it will be used later
         val savedR = r.toDouble() / 255
         val savedG = g.toDouble() / 255
         val savedB = b.toDouble() / 255
 
         avatarColor = "[$savedR, $savedG, $savedB, 1]"
-        println(avatarColor)
+
     }
 
     fun createUserClicked(view: View){
