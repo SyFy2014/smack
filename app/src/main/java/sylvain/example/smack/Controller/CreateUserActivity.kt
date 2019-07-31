@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_create_user.*
 import sylvain.example.smack.R
+import sylvain.example.smack.Services.AuthService
 import java.util.*
 
 class CreateUserActivity : AppCompatActivity() {
@@ -53,6 +54,11 @@ class CreateUserActivity : AppCompatActivity() {
     }
 
     fun createUserClicked(view: View){
+        AuthService.registerUser(this,"s@s.com", "123456"){complete ->
+            if (complete) {
 
+            }
+
+        }
     }
 }
